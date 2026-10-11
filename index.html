@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#4a154b"><meta name="description" content="حقوقي السوري: مساحة تعليمية لطلاب الحقوق">
+<title>حقوقي السوري</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top"><a class="brand" href="#"><span class="mark">⚖</span><span><b>حقوقي السوري</b><small>رفيقك في كلية الحقوق</small></span></a><a class="top-link" href="#library">مكتبة الطلاب</a></header>
+<main>
+<section class="hero"><div class="hero-tag">من السنة الأولى إلى الرابعة</div><h1>افهم القانون،<br><em>وابنِ مستقبلك.</em></h1><p>مساعد دراسي، ملخصات طلابية، وأدوات للمراجعة في مكان واحد.</p><form id="searchForm" class="search"><input id="globalSearch" placeholder="ابحث في الملخصات والمواضيع..." aria-label="البحث"><button>بحث</button></form></section>
+<section class="section"><div class="heading"><div><small>مساحة تعلمك</small><h2>ماذا تريد أن تفعل اليوم؟</h2></div></div><div class="tiles">
+<a href="#assistant" class="tile"><span>✦</span><b>المساعد القانوني</b><small>اسأل عن المفاهيم القانونية</small></a>
+<a href="#library" class="tile"><span>▤</span><b>الملخصات والمحاضرات</b><small>تصفح وشارك المعرفة</small></a>
+<a href="#years" class="tile"><span>🎓</span><b>سنوات الدراسة</b><small>الأولى حتى الرابعة</small></a>
+<a href="#tools" class="tile"><span>✓</span><b>أدوات الطالب</b><small>اختبارات ومصطلحات</small></a>
+</div></section>
+<section id="assistant" class="section card"><div class="heading"><div><small>مساعد الدراسة</small><h2>المساعد القانوني الذكي</h2></div><span class="status">يتطلب إعداد الخدمة</span></div><p class="muted">اطرح سؤالاً دراسياً. يجب التحقق من النصوص القانونية الرسمية وتعديلاتها قبل الاعتماد على الإجابة.</p><div id="chat" class="chat"><div class="bubble bot">مرحباً! اكتب سؤالك القانوني. عند نشر الخادم وضبط مزود الذكاء الاصطناعي، سأساعدك في فهم الموضوع وأوضح حدود الإجابة.</div></div><form id="askForm"><textarea id="question" rows="3" required maxlength="4000" placeholder="مثال: اشرح الفرق بين القانون العام والقانون الخاص"></textarea><button class="primary">إرسال السؤال ←</button></form><p class="tiny">لا ترسل بيانات شخصية أو أسراراً تخص قضايا حقيقية. هذا المساعد للتعليم وليس للاستشارة القانونية.</p></section>
+<section id="library" class="section"><div class="heading"><div><small>تعاون الطلاب</small><h2>مكتبة الملخصات</h2></div><button class="outline" id="togglePublish">＋ إضافة ملخص</button></div><div class="filters"><select id="yearFilter"><option>كل السنوات</option><option>الأولى</option><option>الثانية</option><option>الثالثة</option><option>الرابعة</option></select><input id="noteSearch" placeholder="ابحث في الملخصات"></div><div id="notes" class="notes"></div>
+<form id="publishForm" class="publish hidden"><h3>إضافة ملخص للتجربة</h3><label>العنوان<input id="noteTitle" required maxlength="120"></label><div class="two"><label>السنة<select id="noteYear"><option>الأولى</option><option>الثانية</option><option>الثالثة</option><option>الرابعة</option></select></label><label>المادة<input id="noteSubject" required></label></div><label>وصف الملخص<textarea id="noteDesc" rows="3" required maxlength="1200"></textarea></label><button class="primary">إضافة محلية</button><p class="tiny">حالياً يظهر الملخص في هذا المتصفح فقط. النشر المشترك يتطلب تفعيل قاعدة البيانات وتسجيل الدخول.</p></form></section>
+<section id="years" class="section"><div class="heading"><div><small>خطة دراستك</small><h2>اختر السنة الدراسية</h2></div></div><div class="years"><div><b>السنة الأولى</b><small>مقررات التأسيس القانوني</small></div><div><b>السنة الثانية</b><small>المقررات وفق الخطة المعتمدة</small></div><div><b>السنة الثالثة</b><small>المقررات وفق الخطة المعتمدة</small></div><div><b>السنة الرابعة</b><small>المقررات وفق الخطة المعتمدة</small></div></div><p class="tiny">الأسماء أعلاه عامة وليست قائمة رسمية بالمواد. يجب اعتماد الخطة الدراسية الخاصة بالجامعة.</p></section>
+<section id="tools" class="section card"><div class="heading"><div><small>مراجعة ذكية</small><h2>أدوات طالب الحقوق</h2></div></div><div class="toolgrid"><button id="quiz">❖ اختبار سريع</button><button id="term">📚 مصطلح قانوني</button><button id="study">☑ قائمة مذاكرة</button></div><div id="toolResult" class="result hidden"></div></section>
+<aside class="warning"><b>تنبيه مهم</b><p>المحتوى التجريبي لا يُعد مصدراً قانونياً أو استشارة. تحقق من التشريعات المنشورة رسمياً ومن تعديلاتها وتاريخ نفاذها.</p></aside>
+<footer>حقوقي السوري · نسخة أولية تعليمية</footer>
+</main><nav class="bottom"><a href="#">⌂<small>الرئيسية</small></a><a href="#library">▤<small>الملخصات</small></a><a href="#assistant">✦<small>المساعد</small></a><a href="#tools">☷<small>الأدوات</small></a></nav><script src="app.js"></script>
+</body></html>
